@@ -3,7 +3,7 @@ class Api::V1::FilmsController < ApplicationController
   # index renders all items in the products table
   def index
     films = Film.all
-    render json: products, status: 200
+    render json: films, status: 200
   end
 
 
@@ -32,19 +32,21 @@ class Api::V1::FilmsController < ApplicationController
     if film
       render json: film, status: 200
     else
-      render json: {error: : "Film not found."}
+      render json: {error: "Film not found."}
   end
-end
 
 
-private
-  def film_params
-    params.require(:film).permit([
-      :name,
-      :genre,
-      :director
-    ])
+
+  private
+    def film_params
+      params.require(:film).permit([
+        :name,
+        :genre,
+        :director
+      ])
+    end
   end
+
 end
 
 #irb(main):001:0> f = Film.new(name: "The Lord of the Rings: The Fellowship of the Ring", genre: "Fantasy Adventure", director: "Peter Jackson")
