@@ -26,6 +26,6 @@ Things you may want to cover:
 Time line of work {
 
 Installed ruby on rails - 9pm - 11pm mon.
-Started work - 3pm tues.
+Tues work - 3pm - 5.20pm.
 
 }

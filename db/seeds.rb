@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Film.create([
+films = Film.create([
     {
         name: "The Lord of the Rings: The Two Towers",
         genre: "Fantasy Adventure",
