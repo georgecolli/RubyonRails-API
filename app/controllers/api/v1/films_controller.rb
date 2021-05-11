@@ -46,3 +46,5 @@ private
     ])
   end
 end
+
+#irb(main):001:0> f = Film.new(name: "The Lord of the Rings: The Fellowship of the Ring", genre: "Fantasy Adventure", director: "Peter Jackson")
