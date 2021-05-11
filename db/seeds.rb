@@ -23,9 +23,29 @@ films = Film.create([
         director: "Comedy Drama"
     },
     {
-        name: "The Lord of the Rings: The Two Towers",
-        genre: "Fantasy Adventure",
-        director: "Peter Jackson"
+        name: "Shutter Island",
+        genre: "Thriller",
+        director: "Martin Scorsese"
+    },
+    {
+        name: "Se7en",
+        genre: "Thriller",
+        director: "David Fincher"
+    },
+    {
+        name: "Prisoners",
+        genre: "Thriller",
+        director: "Denis Villeneuve"
+    },
+    {
+        name: "Shrek",
+        genre: "Comedy",
+        director: "Andrew Adamson"
+    },
+    {
+        name: "Get Him to the Greek",
+        genre: "Comedy",
+        director: "Nicholas Stoller"
     },
 
 ])
