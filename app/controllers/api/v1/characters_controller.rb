@@ -4,10 +4,37 @@ class Api::V1::CharactersController < ApplicationController
     render json: films, status: 200
   end
 
-
-
-
-  
-  def show
+  def create
+    character = Character.new(
+      name: character_params[:name],
+      actor: character_params[:actor],
+      film: character_params[:film],
+    )
+    if character.save
+      render json: film, status: 200
+    else
+      render json: {error: "Error creating character."}
+    end
   end
+
+
+  def show
+    character = Character.find_by(id: params[:id])
+    if character
+      render json: character, status 200
+    else
+      render json: {error: "Character not found."}
+  end
+
+
+  private
+    def character_params
+      params.require(:character).permit([
+        :name,
+        :actor,
+        :film
+      ])
+    end
+  end
+
 end

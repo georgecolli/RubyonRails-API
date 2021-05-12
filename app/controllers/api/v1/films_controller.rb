@@ -19,7 +19,7 @@ class Api::V1::FilmsController < ApplicationController
     if film.save
       render json: film, status: 200
     else
-      render json: {error: "Error creating review."}
+      render json: {error: "Error adding film."}
     end
   end
 
