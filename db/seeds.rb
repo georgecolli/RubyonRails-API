@@ -19,8 +19,8 @@ films = Film.create([
     },
     {
         name: "Green Book",
-        genre: "Fantasy Adventure",
-        director: "Comedy Drama"
+        genre: "Comedy Drama",
+        director: "Peter Farrelly"
     },
     {
         name: "Shutter Island",
@@ -49,3 +49,7 @@ films = Film.create([
     },
 
 ])
+
+#rails g controller api/v1/characters index show --no-helper --no-assets --no-template-engine --no-test-framework
+
+ #rails g model character name:string actor-actress:string film:Film  --no-helper --no-assets --no-template-engine --no-test-framework
