@@ -3,7 +3,7 @@ class CreateCharacters < ActiveRecord::Migration[6.1]
     create_table :characters do |t|
       t.string :name
       t.string :actor
-      t.film :film
+      t.string :film
 
       t.timestamps
     end

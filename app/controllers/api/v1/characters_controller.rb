@@ -1,7 +1,10 @@
 class Api::V1::CharactersController < ApplicationController
+  
+  film = Film.new
+  
   def index
     characters = Character.all
-    render json: films, status: 200
+    render json: characters, status: 200
   end
 
   def create
@@ -21,7 +24,7 @@ class Api::V1::CharactersController < ApplicationController
   def show
     character = Character.find_by(id: params[:id])
     if character
-      render json: character, status 200
+      render json: character, status: 200
     else
       render json: {error: "Character not found."}
   end
@@ -38,3 +41,6 @@ class Api::V1::CharactersController < ApplicationController
   end
 
 end
+
+
+#irb(main):001:0> c = Character.new(name: "Gandalf", actor: "Ian McKellen", film: "The Lord of the Rings Trilogy")
