@@ -2,7 +2,7 @@ class Api::V1::CharactersController < ApplicationController
   
   film = Film.new
   
-  def index
+  def index 
     characters = Character.all
     render json: characters, status: 200
   end

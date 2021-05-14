@@ -49,7 +49,7 @@ films = Film.create([
     },
 
 ])
-("Dr Don Shirley", "Mahershala Ali", "Green Book"), ("Teddy Daniels", "Leonardo DiCaprio", "Shutter Island");
+#("Dr Don Shirley", "Mahershala Ali", "Green Book"), ("Teddy Daniels", "Leonardo DiCaprio", "Shutter Island");
 
 Character.new([
     {
