@@ -6,7 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Film.create([
+films = Film.create([
     {
         name: "The Lord of the Rings: The Two Towers",
         genre: "Fantasy Adventure",
@@ -49,6 +49,7 @@ Film.create([
     },
 
 ])
+("Dr Don Shirley", "Mahershala Ali", "Green Book"), ("Teddy Daniels", "Leonardo DiCaprio", "Shutter Island");
 
 Character.new([
     {
@@ -77,14 +78,14 @@ Character.new([
         film: "Prisoners"
     },
     {
-        name: "Tracy Mills",
-        actor: "Gwyneth Paltrow",
-        film: "Se7en"
+        name: "Donkey",
+        actor: "Eddie Murphy",
+        film: "Shrek"
     },
     {
-        name: "Tracy Mills",
-        actor: "Gwyneth Paltrow",
-        film: "Se7en"
+        name: "Jackie Q",
+        actor: "Rose Byrne",
+        film: "Get Him to the Greek"
     },
 ])
 
